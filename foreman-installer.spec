@@ -1,5 +1,5 @@
 Name:       foreman-installer
-Version:    1.1.2
+Version:    1.1.3
 Release:    1%{?dist}
 Summary:    Puppet-based installer for The Foreman
 
@@ -27,7 +27,7 @@ management system.
 echo "%{VERSION}" > VERSION
 
 %install
-cp -dpR * %{_datadir}/%{name}
+cp -dpR * %{buildroot}/%{_datadir}/%{name}
 
 %if 0%{?rhel} && 0%{?rhel} == 5
 %clean
@@ -40,5 +40,8 @@ cp -dpR * %{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
+* Thu May 23 2013 Lukas Zapletal <lzap+git@redhat.com>
+- wip (lzap+git@redhat.com)
+
 * Wed May 23 2013 Lukas Zapletal <lzap+rpm[@]redhat.com> - 1.1.2-1
 - initial version
