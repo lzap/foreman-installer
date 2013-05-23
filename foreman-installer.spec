@@ -1,5 +1,5 @@
 Name:       foreman-installer
-Version:    1.1.2
+Version:    1.1.3
 Release:    1%{?dist}
 Summary:    Puppet-based installer for The Foreman
 
@@ -40,5 +40,8 @@ cp -dpR * %{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
+* Thu May 23 2013 Lukas Zapletal <lzap+git@redhat.com> 1.1.3-1
+- new package built with tito
+
 * Wed May 23 2013 Lukas Zapletal <lzap+rpm[@]redhat.com> - 1.1.2-1
 - initial version
