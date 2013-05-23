@@ -1,5 +1,5 @@
 Name:       foreman-installer
-Version:    1.1.4
+Version:    1.1.5
 Release:    1%{?dist}
 Summary:    Puppet-based installer for The Foreman
 Group:      Applications/System
@@ -39,6 +39,10 @@ cp -dpR * %{buildroot}/%{_datadir}/%{name}
 %{_datadir}/%{name}
 
 %changelog
+* Thu May 23 2013 Lukas Zapletal <lzap+git@redhat.com> 1.1.5-1
+- wip (lzap+git@redhat.com)
+- wip (lzap+git@redhat.com)
+
 * Thu May 23 2013 Lukas Zapletal <lzap+git@redhat.com> 1.1.4-1
 - wip (lzap+git@redhat.com)
 
