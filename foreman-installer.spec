@@ -2,7 +2,6 @@ Name:       foreman-installer
 Version:    1.1.4
 Release:    1%{?dist}
 Summary:    Puppet-based installer for The Foreman
-
 Group:      Applications/System
 License:    GPLv3+ and ASL 2.0
 URL:        http://theforeman.org
